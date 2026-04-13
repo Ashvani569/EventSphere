@@ -1,0 +1,83 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  text-align: center;
+}
+
+.form-box {
+  background: white;
+  padding: 20px;
+  margin: 50px auto;
+  width: 300px;
+  border-radius: 10px;
+}
+
+input, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+button {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff2a00;
+  transform: scale(1.05);
+}
+
+.events {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* 🔥 POPUP UPGRADE */
+#popup {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  padding: 12px 25px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* SHOW animation */
+#popup.show {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/* SUCCESS gradient */
+.success {
+  background: linear-gradient(45deg, #00c853, #64dd17);
+}
+
+/* ERROR gradient */
+.error {
+  background: linear-gradient(45deg, #ff1744, #ff5252);
+}

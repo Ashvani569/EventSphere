@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2 id="welcome"></h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<!-- 🔥 Date & Time Selection -->
+<div style="margin:20px;">
+  <input type="date" id="eventDate">
+  <input type="time" id="eventTime">
+</div>
+
+<section class="events">
+  <div class="card" onclick="selectEvent('Music Fest')">🎶 Music Fest</div>
+  <div class="card" onclick="selectEvent('Tech Seminar')">💻 Tech Seminar</div>
+  <div class="card" onclick="selectEvent('Dance Show')">💃 Dance Show</div>
+  <div class="card" onclick="selectEvent('Coding Contest')">👨‍💻 Coding Contest</div>
+</section>
+
+<section class="history">
+  <h3>Your Event History</h3>
+  <ul id="history"></ul>
+</section>
+
+<!-- 🔥 Stats -->
+<section>
+  <h3>Event Stats</h3>
+  <div id="stats"></div>
+</section>
+
+<div id="popup"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
