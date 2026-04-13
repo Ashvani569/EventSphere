@@ -20,7 +20,7 @@ form.addEventListener("submit", function(e) {
     popup.className = "success show";
 
     setTimeout(() => {
-      window.location.href = "index.html";
+      window.location.href = "dashboard.html";
     }, 1200);
   } else {
     // ❌ Error popup
